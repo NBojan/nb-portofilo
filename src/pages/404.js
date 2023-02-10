@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
+import { Seo } from "../components/Seo"
 
 const ErrorPage = () => {
     return (
@@ -12,7 +13,9 @@ const ErrorPage = () => {
         </Wrapper>
     )
 }
-
+export const Head = () => {
+    return <Seo title="Missing" />
+}
 const Wrapper = styled.main`
     display: flex;
     padding: 32px 0;

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Seo } from "../components/Seo"
 
 const Contact = () => {
     return (  
@@ -24,7 +25,9 @@ const Contact = () => {
         </Wrapper>
     );
 }
-
+export const Head = () => {
+    return <Seo title="Contact" />
+}
 const Wrapper = styled.main`
     display: flex;
     padding: 32px 0;

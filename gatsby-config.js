@@ -12,6 +12,13 @@ require("dotenv").config({
 });
 
 module.exports = {
+  siteMetadata: {
+    title: "NB Portoflio",
+    description: "NB Portofilo contaiting the work of Mr. Noveski, projects, contact information, social links...",
+    twitterUsername: "@Trojka33",
+    siteUrl: "https://nb-portoflio.netlify.app",
+    image: "/mainImg.png"
+  },
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,

@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import Title from "../components/Title"; 
-import { graphql } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 import newCodes from "../constants/newCodes";
+import { graphql } from "gatsby";
+import { Seo } from "../components/Seo"
+import { StaticImage } from "gatsby-plugin-image";
 
 export const query = graphql`
   query {
@@ -48,7 +49,9 @@ const About = ({ data }) => {
         </Wrapper>
     );
 }
- 
+export const Head = () => {
+    return <Seo title="About" />
+}
 const Wrapper = styled.main`
     display: flex;
     padding: 32px 0;

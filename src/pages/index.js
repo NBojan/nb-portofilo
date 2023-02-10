@@ -3,6 +3,7 @@ import Hero from "../components/Hero"
 import Services from "../components/Services"
 import Experience from "../components/Experience"
 import Featured from "../components/Featured"
+import { Seo } from "../components/Seo"
 
 
 export default function Home() {
@@ -14,4 +15,8 @@ export default function Home() {
       <Featured />
     </main>
   )
+}
+
+export const Head = () => {
+  return <Seo title="Homepage" />
 }

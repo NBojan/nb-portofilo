@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { graphql, Link } from "gatsby";
+import { Seo } from "../components/Seo";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const ProjectTemplate = ({ data }) => {
@@ -23,6 +24,10 @@ const ProjectTemplate = ({ data }) => {
             </section>
         </Wrapper>
     );
+}
+export const Head = ({ data }) => {
+  const {title, description: {description}} = data.contentfulProjects;
+  return <Seo title={title} description={description}></Seo>
 }
 
 const Wrapper = styled.main`
