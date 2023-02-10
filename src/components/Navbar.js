@@ -17,7 +17,7 @@ const Navbar = ({ toggleSide }) => {
                     {links.map(link => <Link to={link.url} key={link.id}>{link.text}</Link>)}
                 </div>
 
-                <button type="button" className="btn burger-btn" onClick={toggleSide}><AiOutlineAlignRight /></button>
+                <button type="button" className="btn burger-btn" onClick={toggleSide}> <AiOutlineAlignRight /></button>
             </nav>
         </Wrapper>
     );

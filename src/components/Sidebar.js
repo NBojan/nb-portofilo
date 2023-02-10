@@ -8,7 +8,7 @@ import { AiFillCloseCircle } from "react-icons/ai";
 const Sidebar = ({ showSide, toggleSide }) => {
     return (  
         <Wrapper className={showSide ? "sidebar show-side" : "sidebar"}>
-            <button type="button" className="btn close-btn" onClick={toggleSide}><AiFillCloseCircle /></button>
+            <button type="button" className="btn close-btn" onClick={toggleSide}> <AiFillCloseCircle /></button>
 
             <div className={showSide ? "container show-cont" : "container"}>
                 <div className="links">

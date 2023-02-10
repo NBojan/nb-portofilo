@@ -24,8 +24,8 @@ const Project = ({ title, url, github, slug, image, codes: {codes}, description:
                     {codes.map((code, index) => <button className="btn btn-s btn-dark uppercase mr-8" key={index}>{code}</button>)}
                 </div>
                 <div className="links">
-                    <a href={github}><AiFillGithub /></a>
-                    <a href={url}><FiExternalLink /></a>
+                    <a href={github}> <AiFillGithub /></a>
+                    <a href={url}> <FiExternalLink /></a>
                 </div>
             </div>
         </Wrapper>
